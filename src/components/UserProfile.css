@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .second-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .second-form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .second-username {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .second-form__label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .second-form__input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .second-form__input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .show-password-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .show-password-icon i {
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .show-password-icon:hover i {
+    color: #4CAF50;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .second-form {
+      padding: 6rem;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
